@@ -6,15 +6,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/hencostan/devops-infra
+    repoURL: 'https://github.com/seuusuario/seurepositorio-infra.git'
     targetRevision: main
-    path: frontend
+    path: 'frontend'
   destination:
-    server: https://kubernetes.default.svc
-    namespace: devops-frontend
+    server: 'https://kubernetes.default.svc'
+    namespace: frontend-namespace
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+
